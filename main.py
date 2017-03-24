@@ -40,7 +40,7 @@ class MainHandler(webapp2.RequestHandler):
         number_paragraph = "<p>" + number_sentence + "</p>"
 
         cookie_again_button = "<a href='.'><button>Give me another cookie, please!</button></a>"
-        content = header + fortune_paragraph + number_paragraph
+        content = header + fortune_paragraph + number_paragraph + cookie_again_button
         self.response.write(content)
 
 class LoginHandler(webapp2.RequestHandler):
